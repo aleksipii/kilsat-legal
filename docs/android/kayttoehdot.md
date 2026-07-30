@@ -7,7 +7,7 @@ permalink: /android/kayttoehdot/
 # Käyttöehdot ja vastuunvapaus (Kilsat / Ajopäiväkirja — Android)
 
 **Viimeksi päivitetty:** 30.7.2026  
-**Versio:** Android v1.2 (Plus + automatiikka + widget)  
+**Versio:** Android v1.2.1 (Plus + automatiikka + widget)  
 **Tukiosoite:** kilsat.tuki@gmail.com
 
 ---
@@ -39,7 +39,7 @@ Sovellus on työkalu ajomatkojen kirjaamiseen, tarkasteluun ja raportointiin kä
 - CSV- ja PDF-vienti raportointiin
 - Kotinäytön widget (km / korvaus, paikallinen data)
 - Onboarding ja asetusten tallennus laitteelle
-- Vapaaehtoinen *Tarjoa kahvi* -kertaosto (ei avaa Plus-ominaisuuksia)
+- Vapaaehtoinen *Tarjoa kahvi* -kertaosto (ei avaa Plus-ominaisuuksia; **ei lahjoitus eikä hyväntekeväisyys** — ks. kohta 8)
 
 Sovellus on ilmainen käyttää, eikä käyttäjän tarvitse ostaa mitään perustoimintojen käyttöä varten. Pakollista kuukausitilausta ei ole.
 
@@ -56,7 +56,7 @@ Valinnainen **Kilsat Plus** -kuukausitilaus on erillinen tuote; ilmainen taso s�
 - **Peruutus:** **Google Play → profiili → Maksut ja tilaukset → Tilaukset → Kilsat Plus → Peruuta** (tai vastaava Play-tilaushallinta). Peruutus astuu voimaan kuluvan maksetun jakson lopussa
 - **Palautukset:** Maksut, laskutus ja palautukset määräytyvät **Google Playn ehtojen** mukaan. Kehittäjä ei käsittele maksukorttitietoja
 - **Palauta ostokset:** saatavilla sovelluksen Asetukset → Kilsat Plus -näkymässä
-- **Tarjoa kahvi** pysyy erillisenä vapaaehtoisena kertaostona; se ei sisälly Plus-tilaukseen eikä aktivoi Plus-ominaisuuksia
+- **Tarjoa kahvi** pysyy erillisenä vapaaehtoisena kertaostona; se ei sisälly Plus-tilaukseen eikä aktivoi Plus-ominaisuuksia. Se **ei ole lahjoitus eikä hyväntekeväisyyskohde** (ks. kohta 8).
 
 Täydelliset tilausehdot: **kohta 8.2**.
 
@@ -65,6 +65,7 @@ Sovellus ei ole:
 - Verohallinnon, muun viranomaisen tai julkisen tahon sovellus, palvelu tai niiden kumppani
 - vero-, kirjanpito-, lakiasiantuntija- tai neuvontapalvelu
 - takuu oikeasta kilometrikorvauksesta, verotuksesta tai työnantajan hyväksynnästä
+- lahjoitus- tai hyväntekeväisyyspalvelu (mukaan lukien *Tarjoa kahvi* -osto)
 
 Sovelluksen oletuskilometrikorvaus (esim. 0,55 €/km) on vain aloitusarvo. Käyttäjän on varmistettava voimassa oleva määrä Verohallinnolta, työnantajalta tai muulta toimivaltaiselta taholta.
 
@@ -151,8 +152,10 @@ Kehittäjä ei hallitse näitä palveluja eikä vastaa niiden saatavuudesta tai 
 **8. Vapaaehtoinen Tarjoa kahvi -osto**
 
 - Sovellus on täysin käytettävissä ilman maksua.
-- Käyttäjä voi halutessaan ostaa kulutettavan Tarjoa kahvi -tuotteen tukeakseen kehitystä.
-- Osto ei avaa lisäominaisuuksia eikä anna pysyviä etuja.
+- Käyttäjä voi halutessaan ostaa kulutettavan **Tarjoa kahvi** -tuotteen tukeakseen kehitystä Google Playn kautta.
+- **Ei lahjoitus eikä hyväntekeväisyys:** *Tarjoa kahvi* on **vapaaehtoinen kulutettava in-app-osto** (consumable). Se **ei ole** lahjoitus, hyväntekeväisyysmaksu, keräys eikä verovähennyskelpoinen lahjoitus. Kehittäjä **ei** ole rekisteröity hyväntekeväisyysjärjestö.
+- Osto ei avaa lisäominaisuuksia eikä anna pysyviä etuja; se ei sisälly Kilsat Plus -tilaukseen eikä aktivoi Plus-ominaisuuksia.
+- Käyttäjän ei tarvitse ostaa kahvia sovelluksen käyttämiseksi.
 - Maksu, laskutus ja palautukset määräytyvät Google Playn ehtojen mukaan.
 - Kehittäjä ei käsittele maksukorttitietoja suoraan.
 
@@ -195,7 +198,7 @@ Tämä kohta täydentää Plus-tilauksen ehdot. Sovelluksen Kilsat Plus -näkym�
 **Plus ei sisällä eikä vaadi:**
 
 - Manuaalista GPS-matkaa, historiaa, PDF/CSV-vientiä, suosikkiosoitteita, suosikkiautoja, tilastoja tai widgetiä — nämä ovat **ilmaisessa perustasossa**
-- *Tarjoa kahvi* -kertaostoa (erillinen tuote)
+- *Tarjoa kahvi* -kertaostoa (erillinen tuote; ei lahjoitus / ei hyväntekeväisyys)
 - Pilvisynkronointia (**ei käytössä** nykyversiossa; ei osa Plus-tilausta)
 
 ### 8.2.4 Maksu, palautukset ja Palauta ostokset
@@ -231,7 +234,7 @@ Kehittäjä voi päivittää näitä ehtoja. Ajantasainen versio on saatavilla S
 
 **Android v1.0 (27.7.2026):** Ensimmäinen Android-julkaisu. Manuaalinen GPS-matka, historia, tilastot, suosikit, CSV/PDF-vienti.
 
-**Android v1.2 (30.7.2026):** Kilsat Plus -tilaus (Google Play), automaattinen matka, ajon aikainen ilmoitus, widget, suosikkiautot, tilausehdot kohta 8.2. Ilmainen perustaso säilyy.
+**Android v1.2.1 (30.7.2026):** Kilsat Plus -tilaus (Google Play), automaattinen matka, ajon aikainen ilmoitus, widget, suosikkiautot, tilausehdot kohta 8.2. Vahvistettu, että *Tarjoa kahvi* ei ole lahjoitus eikä hyväntekeväisyys. Ilmainen perustaso säilyy.
 
 ---
 

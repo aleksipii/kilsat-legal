@@ -7,7 +7,7 @@ permalink: /android/tietosuojaseloste/
 # Tietosuojaseloste (Kilsat / Ajopäiväkirja — Android)
 
 **Viimeksi päivitetty:** 30.7.2026  
-**Versio:** Android v1.2  
+**Versio:** Android v1.2.1  
 **Tukiosoite:** kilsat.tuki@gmail.com
 
 ---
@@ -117,7 +117,7 @@ CSV- ja PDF-raportit muodostetaan laitteella. Käyttäjä voi itse jakaa tiedost
 |---------|-----------|
 | Google Play Services (sijainti) | GPS-matkan mittaus |
 | Google Play Services (Activity Recognition) | Täydentävä liiketunnistus (Plus, jos saatavilla) |
-| Google Play Billing | Valinnainen Kilsat Plus -tilaus; vapaaehtoinen Tarjoa kahvi -kertaosto |
+| Google Play Billing | Valinnainen Kilsat Plus -tilaus; vapaaehtoinen Tarjoa kahvi -kertaosto (**ei lahjoitus / ei hyväntekeväisyys**) |
 | Android Geocoder | Osoitteiden muodostus (kun käytössä) |
 | Laitteen jakovalikko | CSV/PDF-tiedostojen jakaminen käyttäjän valitsemille sovelluksille |
 
@@ -203,7 +203,7 @@ Tätä selostetta voidaan päivittää (esim. uudet ominaisuudet). Ajantasainen 
 
 **Android v1.0 (27.7.2026):** Ensimmäinen Android-versio. Paikallinen Room-tallennus, manuaalinen GPS-matka, historia, tilastot, CSV/PDF-vienti, suosikit, onboarding.
 
-**Android v1.2 (30.7.2026):** Kilsat Plus (Google Play Billing), automaattinen matka, Activity Recognition / Bluetooth-täydennys, etualan ilmoitus, widget, akkuohjeistus. Ei pilvisynkronointia.
+**Android v1.2.1 (30.7.2026):** Kilsat Plus (Google Play Billing), automaattinen matka, Activity Recognition / Bluetooth-täydennys, etualan ilmoitus, widget, akkuohjeistus. Tarjoa kahvi = kulutettava IAP, ei lahjoitus. Ei pilvisynkronointia.
 
 ---
 
