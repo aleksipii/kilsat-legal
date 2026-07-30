@@ -2,3 +2,5 @@ title: Kilsat — Legal
 description: Tietosuojaselosteet ja käyttöehdot (iOS & Android)
 markdown: kramdown
 theme: minima
+# Älä listaa kaikkia sivuja automaattisesti yläpalkkiin (iOS/Android sekoittuu).
+header_pages: []
