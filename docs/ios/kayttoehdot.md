@@ -177,7 +177,7 @@ Sovellus hyödyntää seuraavia palveluja:
 - osoitteiden muodostus ja osoitehaku (Applen kartat)
 - reittiehdotus ajomatkan pituudelle manuaalisissa matkoissa (Applen kartat; vaatii verkkoyhteyden)
 - Siri ja pikakomennot (valinnaiset komennot matkan aloittamiseen ja lopettamiseen)
-- selainlinkit dokumentteihin (Notion)
+- selainlinkit dokumentteihin (julkiset legal-sivut)
 
 Kehittäjä ei hallitse näitä palveluja eikä vastaa niiden saatavuudesta tai muutoksista.
 

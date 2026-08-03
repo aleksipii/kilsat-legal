@@ -148,7 +148,7 @@ CSV- ja PDF-raportit muodostetaan laitteella. Käyttäjä voi itse jakaa tiedost
 | Applen Siri / pikakomennot | Valinnaiset pikakomennot matkan aloittamiseen ja lopettamiseen |
 | App Store | Vapaaehtoinen *Tarjoa kahvi* -osto; valinnainen **Kilsat Plus** -kuukausitilaus. Maksu ja tilausoikeus Applen kautta; ks. kohta 2. |
 | Applen arvostelupyyntö | Sovelluksen arvostelu App Storessa (harvoin, Applen sääntöjen mukaan) |
-| Selain (Notion-linkit) | Tämän selosteen ja käyttöehtojen lukeminen asetuksista; vaatii verkkoyhteyden |
+| Selain (julkiset legal-sivut) | Tämän selosteen ja käyttöehtojen lukeminen asetuksista; vaatii verkkoyhteyden |
 
 Näiden palveluiden tietosuojakäytännöt määräytyvät kyseisten toimijoiden omien ehtojen mukaan.
 
@@ -233,7 +233,7 @@ Sovellus on tarkoitettu täysi-ikäisille käyttäjille (18+). App Storen ikälu
 
 ## 11. Muutokset tietosuojaselosteeseen
 
-Tätä selostetta voidaan päivittää (esim. uudet ominaisuudet). Ajantasainen versio on saatavilla sovelluksen Asetukset -linkin kautta (Notion, verkkoyhteys tarvitaan).
+Tätä selostetta voidaan päivittää (esim. uudet ominaisuudet). Ajantasainen versio on saatavilla sovelluksen Asetukset -linkin kautta (verkkoyhteys tarvitaan).
 
 **v1.1 (18.6.2026):** Siri-shortcutit, widget ja paikallinen ajotilan jako widgetille. Ei muutoksia pilvisynkronointiin.
 
