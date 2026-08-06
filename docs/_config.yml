@@ -4,3 +4,5 @@ markdown: kramdown
 theme: minima
 # Älä listaa kaikkia sivuja automaattisesti yläpalkkiin (iOS/Android sekoittuu).
 header_pages: []
+
+# rebuild trigger 2026-08-06T12:47:49Z
