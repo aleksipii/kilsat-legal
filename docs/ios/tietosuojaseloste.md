@@ -6,7 +6,7 @@ permalink: /ios/tietosuojaseloste/
 
 # Tietosuojaseloste (Kilsat / Ajopäiväkirja)
 
-**Viimeksi päivitetty:** 27.7.2026  
+**Viimeksi päivitetty:** 6.8.2026  
 **Versio:** 1.2.1  
 **Tukiosoite:** kilsat.tuki@gmail.com
 
@@ -110,7 +110,9 @@ Automaattinen matka on **valinnainen Plus-ominaisuus**. Se voi vaatia *Sijainti 
 
 **GPS-primaus ja akun säästö (v1.2.1+):** Kun automaattinen matka on käytössä mutta aktiivista matkaa ei ole käynnissä, sovellus **ei pidä jatkuvaa GPS-seurantaa päällä kotona tai toimistolla**. Kun et aja, käytetään harvaa *merkittävät sijainninmuutokset* -valvontaa, joka voi herättää sovelluksen taustalla merkittävän sijaintimuutoksen yhteydessä. Lyhyt jatkuva GPS-ikkuna käynnistyy, kun yksi seuraavista täyttyy: **merkittävä sijaintimuutos (herätys)**, **laitteen liiketunnistus tunnistaa ajoneuvossa liikkumisen**, tai **CarPlay-/Bluetooth-äänireitti**. Jos ajoa ei vahvisteta, GPS-ikkuna suljetaan (tyypillisesti noin 1,5–3 minuutin kuluttua). CarPlay ei ole pakollinen. Sininen sijainti-indikaattori näkyy vain, kun taustasijaintia käytetään aktiivisesti.
 
-Automaattinen tunnistus perustuu GPS-nopeuteen, liikeanalyysiin ja sovelluksen sääntöihin. Se ei takaa virheetöntä tunnistusta kaikissa tilanteissa (esim. julkiset kulkuneuvot).
+**Sovelluksen sulkeminen sovellusvaihtajasta (6.8.2026):** *Merkittävät sijainninmuutokset* -valvonta on iOS:n järjestelmätason toiminto, joka voi herättää sovelluksen lyhyeksi hetkeksi taustalla **myös silloin, kun käyttäjä on sulkenut Kilsatin kokonaan sovellusvaihtajasta**. Tällöin GPS-ikkuna voi käynnistyä samalla tavalla kuin sovelluksen ollessa tavallisesti taustalla. Sen sijaan laitteen liiketunnistus ja CarPlay-/Bluetooth-äänireitin tunnistus eivät ole aktiivisia ennen kuin käyttäjä avaa sovelluksen seuraavan kerran manuaalisesti. Kaikki päättely tapahtuu tälläkin polulla laitteella; mitään tietoa ei lähetetä kehittäjälle.
+
+Automaattinen tunnistus perustuu GPS-nopeuteen, liikeanalyysiin ja sovelluksen sääntöihin. Se ei takaa virheetöntä tunnistusta kaikissa tilanteissa (esim. julkiset kulkuneuvot, kävely tai juoksu — näissä nopeus jää yleensä automaattisen matkan käynnistysrajan alle).
 
 ### Live Activity (v1.2, Kilsat Plus)
 
@@ -250,6 +252,8 @@ Tätä selostetta voidaan päivittää (esim. uudet ominaisuudet). Ajantasainen 
 **v1.2.1 (17.7.2026):** Siivottu tekniset termit käyttäjäystävällisemmiksi. Plus on nykyinen valinnainen tilaus; iCloud ei käytössä. Lisätty kohta 9.1 (kehittäjän vastuuvapaus tietosuojan osalta).
 
 **v1.2.1 (27.7.2026):** Lisätty valinnainen matkamittarin lukema (alku/loppu) manuaaliseen matkaan — käyttäjän oma muistiinpano, ei vaikuta korvauslaskentaan. Lisätty kohta 0: sovellus ei liity Verohallintoon tai muuhun viranomaiseen millään tavalla. Täsmennetty kehittäjän vastuuvapautta (kohta 9.1) käyttäjän itse syöttämien tietojen osalta.
+
+**v1.2.1 (6.8.2026):** Täsmennetty kohtaa 3: merkittävät sijainninmuutokset -valvonta voi herättää sovelluksen lyhyeksi hetkeksi taustalla myös silloin, kun käyttäjä on sulkenut sovelluksen kokonaan sovellusvaihtajasta (iOS:n järjestelmätason toiminto). Muu tunnistus (liiketunnistus, CarPlay/Bluetooth) vaatii sovelluksen avaamisen manuaalisesti tämän jälkeen.
 
 ---
 

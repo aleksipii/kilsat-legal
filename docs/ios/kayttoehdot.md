@@ -6,7 +6,7 @@ permalink: /ios/kayttoehdot/
 
 # Käyttöehdot ja vastuunvapaus (Kilsat / Ajopäiväkirja)
 
-**Viimeksi päivitetty:** 27.7.2026  
+**Viimeksi päivitetty:** 6.8.2026  
 **Versio:** 1.2.1  
 **Tukiosoite:** kilsat.tuki@gmail.com
 
@@ -78,6 +78,8 @@ Täydelliset tilausehdot: **kohta 8.2**.
 Automaattinen matka on apuväline. Käyttäjä vastaa tallennettujen matkojen oikeellisuudesta ja voi perua tai muokata matkoja historiasta. 4 minuutin pysähdyksen jälkeen sovellus kysyy, jatkatko matkaa; jos et vastaa, matka tallentuu automaattisesti 5 minuutin pysähdyksen jälkeen.
 
 **v1.2.1 — automaattisen matkan GPS-primaus:** Automaattinen matka ei pidä jatkuvaa GPS-seurantaa päällä, kun et aja. Harva merkittävien sijainninmuutosten valvonta voi herättää sovelluksen taustalla; lyhyt GPS-ikkuna käynnistyy sijaintiherätyksestä, laitteen liiketunnistuksesta tai CarPlay/Bluetooth-äänireitistä. CarPlay ei ole pakollinen. Jos ajoa ei vahvisteta, GPS sammutetaan. Käyttäjä voi silti aloittaa matkan manuaalisesti ilman Plus-tilausta.
+
+**v1.2.1 — sovelluksen sulkeminen sovellusvaihtajasta (6.8.2026):** Jos käyttäjä sulkee Kilsatin kokonaan sovellusvaihtajasta (pyyhkäisee pois), merkittävä sijainninmuutos voi silti lyhyesti käynnistää sovelluksen taustalla ja avata GPS-ikkunan iOS:n järjestelmätason toiminnon ansiosta. Muu tunnistus (esim. laitteen liiketunnistus, CarPlay/Bluetooth-äänireitti) ei kuitenkaan ole aktiivinen ennen kuin käyttäjä avaa sovelluksen seuraavan kerran manuaalisesti. Luotettavin automaattinen tunnistus edellyttää, ettei käyttäjä sulje Kilsatia sovellusvaihtajasta ajon aikana tai sitä ennen.
 
 **v1.2.1 — käynnistyksen ja pysäytyksen tarkennukset (13.7.2026):** Automaattinen matka voi käynnistyä nopeammin CarPlay- tai auton äänijärjestelmäyhteydellä, ja lyhyet pysähdykset (esim. liikennevalot) eivät nollaa käynnistyksen kumulatiivista liikeaikaa. Kun autoyhteys katkeaa alhaisella nopeudella (esim. pysäköinti ja auton sammutus), sovellus voi tallentaa matkan tavanomaista nopeammin (n. 45–90 sekunnissa) sen sijaan, että odotettaisiin täyttä 5 minuutin pysähdystä — liikenteessä (ruuhka, punaiset valot) autoyhteys ei katkea, joten 5 minuutin turva-aika säilyy näissä tilanteissa ennallaan. Käyttäjä voi aina tarkistaa ja muokata automaattisesti tallennetun matkan tiedot historiasta.
 
@@ -295,6 +297,8 @@ Kehittäjä voi muuttaa, keskeyttää tai lopettaa sovelluksen saatavuuden ilman
 **v1.2.1 (17.7.2026):** Vahvistettu takuun rajaus ja vastuuvapaus (kohdat 5–6) EU/Suomen pakottavan lain sallimissa rajoissa. Siivottu tekniset termit käyttäjäystävällisemmiksi. iCloud edelleen ei käytössä.
 
 **v1.2.1 (27.7.2026):** Lisätty valinnainen matkamittarin lukema (alku/loppu) manuaaliseen matkaan — käyttäjän oma muistiinpano, ei vaikuta korvauslaskentaan. Lisätty ja vahvistettu selkeä maininta (kohta 2), ettei sovelluksella ole mitään yhteyttä, kumppanuutta tai hyväksyntää Verohallinnolta tai muulta viranomaiselta. Laajennettu käyttäjän vastuuta (kohta 3) ja kehittäjän vastuuvapautta (kohdat 5–6) koskemaan käyttäjän itse syöttämiä tietoja ja niiden hyväksyttävyyttä viranomaisille/kolmansille.
+
+**v1.2.1 (6.8.2026):** Täsmennetty, että sovelluksen sulkeminen sovellusvaihtajasta voi silti sallia lyhyen sijaintiherätyksen iOS:n järjestelmätoiminnon ansiosta, mutta luotettavin automaattinen tunnistus edellyttää, ettei sovellusta suljeta sovellusvaihtajasta.
 
 ---
 
