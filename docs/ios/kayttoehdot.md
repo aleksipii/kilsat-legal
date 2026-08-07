@@ -6,7 +6,7 @@ permalink: /ios/kayttoehdot/
 
 # Käyttöehdot ja vastuunvapaus (Kilsat / Ajopäiväkirja)
 
-**Viimeksi päivitetty:** 6.8.2026  
+**Viimeksi päivitetty:** 8.8.2026  
 **Versio:** 1.2.1  
 **Tukiosoite:** kilsat.tuki@gmail.com
 
@@ -30,14 +30,11 @@ Sovellus on työkalu ajomatkojen kirjaamiseen, tarkasteluun ja raportointiin kä
 
 Sovelluksen keskeiset toiminnot sisältävät GPS-pohjaisen matkan seurannan, manuaalisen matkan lisäyksen, matkojen luokittelun (työ/yksityisajo), PDF/CSV-viennin sekä vapaaehtoisen kulutettavan App Store -oston (Tarjoa kahvi).
 
-**v1.1 — uudet ilmaiset ominaisuudet:**
+**Ilmaiset ominaisuudet:**
 
 - **Siri-shortcutit:** matkan aloitus ja lopetus äänellä tai Pikakomennot-sovelluksessa (valinnainen).
 - **Widget:** lukitusnäytön ja kotinäytön widget näyttää paikallisen ajotilan (matka käynnissä, kilometrit).
 - **Pitkä matkahistoria:** varoitus, kun matkoja on yli 200 kpl — suositus rajata raporttia.
-
-**v1.2.1 — uudet ilmaiset ominaisuudet (build 7):**
-
 - **Suosikkiautot:** rajaton määrä laitteella; pikavalinta Ajo-näkymässä.
 - **Matkaan lukittu rekisterinumero:** tallennetaan matkaan tallennushetkellä (ei takautuvaa täyttöä vanhoille matkoille).
 - **Matkan tarkoitus: Muu + lisätieto:** valinnainen tarkennuskenttä työajoille.
@@ -56,11 +53,11 @@ Sovellus ei ole:
 
 Sovelluksen oletuskilometrikorvaus (esim. 0,55 €/km) on vain aloitusarvo. Käyttäjän on varmistettava voimassa oleva määrä Verohallinnolta, työnantajalta tai muulta toimivaltaiselta taholta.
 
-**v1.2.1 — matkamittarin lukema (valinnainen, 27.7.2026):** Käyttäjä voi manuaalisessa matkassa halutessaan kirjata matkamittarin lukeman ajon alkaessa ja/tai päättyessä. Kenttä on täysin valinnainen muistiinpano käyttäjän omaa kirjanpitoa varten — **se ei vaikuta korvauslaskentaan**, jonka lähteenä on aina GPS-mitattu tai käsin syötetty ajomatka (km). Sovellus ei tarkista, vahvista eikä takaa näiden lukemien oikeellisuutta millään tavalla, eikä niiden syöttäminen tarkoita, että Kilsat olisi Verohallinnon hyväksymä tai siihen liittyvä sovellus (ks. yllä). Käyttäjä vastaa yksin lukemien oikeellisuudesta ja käytöstä kirjanpidossa/verotuksessa.
+**Matkamittarin lukema (valinnainen):** Käyttäjä voi manuaalisessa matkassa halutessaan kirjata matkamittarin lukeman ajon alkaessa ja/tai päättyessä. Kenttä on täysin valinnainen muistiinpano käyttäjän omaa kirjanpitoa varten — **se ei vaikuta korvauslaskentaan**, jonka lähteenä on aina GPS-mitattu tai käsin syötetty ajomatka (km). Sovellus ei tarkista, vahvista eikä takaa näiden lukemien oikeellisuutta millään tavalla, eikä niiden syöttäminen tarkoita, että Kilsat olisi Verohallinnon hyväksymä tai siihen liittyvä sovellus (ks. yllä). Käyttäjä vastaa yksin lukemien oikeellisuudesta ja käytöstä kirjanpidossa/verotuksessa.
 
 Valinnainen **Kilsat Plus** -kuukausitilaus on erillinen tuote; ilmainen taso säilyy. Plus-ominaisuudet, hinta ja tilausehdot näytetään sovelluksessa ennen ostoa ja näissä ehdoissa (ks. **kohta 8.2**).
 
-**v1.2 — Kilsat Plus (valinnainen tilaus):**
+**Kilsat Plus (valinnainen tilaus):**
 
 - **Tuote:** Kilsat Plus -kuukausitilaus (App Store).
 - **Hinta:** Näytetään App Storessa ja sovelluksessa ennen ostoa (ohjeellinen hinta Suomessa: 2,99 € / kk; todellinen hinta voi vaihdella maan, verotuksen ja valuutan mukaan).
@@ -77,13 +74,13 @@ Täydelliset tilausehdot: **kohta 8.2**.
 
 Automaattinen matka on apuväline. Käyttäjä vastaa tallennettujen matkojen oikeellisuudesta ja voi perua tai muokata matkoja historiasta. 4 minuutin pysähdyksen jälkeen sovellus kysyy, jatkatko matkaa; jos et vastaa, matka tallentuu automaattisesti 5 minuutin pysähdyksen jälkeen.
 
-**v1.2.1 — automaattisen matkan GPS-primaus:** Automaattinen matka ei pidä jatkuvaa GPS-seurantaa päällä, kun et aja. Harva merkittävien sijainninmuutosten valvonta voi herättää sovelluksen taustalla; lyhyt GPS-ikkuna käynnistyy sijaintiherätyksestä, laitteen liiketunnistuksesta tai CarPlay/Bluetooth-äänireitistä. CarPlay ei ole pakollinen. Jos ajoa ei vahvisteta, GPS sammutetaan. Käyttäjä voi silti aloittaa matkan manuaalisesti ilman Plus-tilausta.
+**Automaattisen matkan GPS-primaus:** Automaattinen matka ei pidä jatkuvaa GPS-seurantaa päällä, kun et aja. Harva merkittävien sijainninmuutosten valvonta voi herättää sovelluksen taustalla; lyhyt GPS-ikkuna käynnistyy sijaintiherätyksestä, laitteen liiketunnistuksesta tai CarPlay/Bluetooth-äänireitistä. CarPlay ei ole pakollinen. Jos ajoa ei vahvisteta, GPS sammutetaan. Käyttäjä voi silti aloittaa matkan manuaalisesti ilman Plus-tilausta.
 
-**v1.2.1 — sovelluksen sulkeminen sovellusvaihtajasta (6.8.2026):** Jos käyttäjä sulkee Kilsatin kokonaan sovellusvaihtajasta (pyyhkäisee pois), merkittävä sijainninmuutos voi silti lyhyesti käynnistää sovelluksen taustalla ja avata GPS-ikkunan iOS:n järjestelmätason toiminnon ansiosta. Muu tunnistus (esim. laitteen liiketunnistus, CarPlay/Bluetooth-äänireitti) ei kuitenkaan ole aktiivinen ennen kuin käyttäjä avaa sovelluksen seuraavan kerran manuaalisesti. Luotettavin automaattinen tunnistus edellyttää, ettei käyttäjä sulje Kilsatia sovellusvaihtajasta ajon aikana tai sitä ennen.
+**Sovelluksen sulkeminen sovellusvaihtajasta:** Jos käyttäjä sulkee Kilsatin kokonaan sovellusvaihtajasta (pyyhkäisee pois), merkittävä sijainninmuutos voi silti lyhyesti käynnistää sovelluksen taustalla ja avata GPS-ikkunan iOS:n järjestelmätason toiminnon ansiosta. Muu tunnistus (esim. laitteen liiketunnistus, CarPlay/Bluetooth-äänireitti) ei kuitenkaan ole aktiivinen ennen kuin käyttäjä avaa sovelluksen seuraavan kerran manuaalisesti. Luotettavin automaattinen tunnistus edellyttää, ettei käyttäjä sulje Kilsatia sovellusvaihtajasta ajon aikana tai sitä ennen.
 
-**v1.2.1 — käynnistyksen ja pysäytyksen tarkennukset (13.7.2026):** Automaattinen matka voi käynnistyä nopeammin CarPlay- tai auton äänijärjestelmäyhteydellä, ja lyhyet pysähdykset (esim. liikennevalot) eivät nollaa käynnistyksen kumulatiivista liikeaikaa. Kun autoyhteys katkeaa alhaisella nopeudella (esim. pysäköinti ja auton sammutus), sovellus voi tallentaa matkan tavanomaista nopeammin (n. 45–90 sekunnissa) sen sijaan, että odotettaisiin täyttä 5 minuutin pysähdystä — liikenteessä (ruuhka, punaiset valot) autoyhteys ei katkea, joten 5 minuutin turva-aika säilyy näissä tilanteissa ennallaan. Käyttäjä voi aina tarkistaa ja muokata automaattisesti tallennetun matkan tiedot historiasta.
+**Käynnistyksen ja pysäytyksen tarkennukset:** Automaattinen matka voi käynnistyä nopeammin CarPlay- tai auton äänijärjestelmäyhteydellä, ja lyhyet pysähdykset (esim. liikennevalot) eivät nollaa käynnistyksen kumulatiivista liikeaikaa. Kun autoyhteys katkeaa alhaisella nopeudella (esim. pysäköinti ja auton sammutus), sovellus voi tallentaa matkan tavanomaista nopeammin (n. 45–90 sekunnissa) sen sijaan, että odotettaisiin täyttä 5 minuutin pysähdystä — liikenteessä (ruuhka, punaiset valot) autoyhteys ei katkea, joten 5 minuutin turva-aika säilyy näissä tilanteissa ennallaan. Käyttäjä voi aina tarkistaa ja muokata automaattisesti tallennetun matkan tiedot historiasta.
 
-**v1.2.1 — automaattinen työ-/yksityisajoluokittelu (Kilsat Plus, 13.7.2026):** Jos käyttäjä on merkinnyt suosikkiosoitteisiin kodin ja/tai työpaikan (useita työpaikkoja voi merkitä), automaattinen matka voi päätellä matkan tyypin (työajo/yksityisajo) vertaamalla matkan lähtöpistettä näihin osoitteisiin. Käyttäjä vastaa aina lopullisesta luokittelusta ja voi muuttaa sen historiasta.
+**Automaattinen työ-/yksityisajoluokittelu (Kilsat Plus):** Jos käyttäjä on merkinnyt suosikkiosoitteisiin kodin ja/tai työpaikan (useita työpaikkoja voi merkitä), automaattinen matka voi päätellä matkan tyypin (työajo/yksityisajo) vertaamalla matkan lähtöpistettä näihin osoitteisiin. Käyttäjä vastaa aina lopullisesta luokittelusta ja voi muuttaa sen historiasta.
 
 ---
 
@@ -194,7 +191,7 @@ Kehittäjä ei hallitse näitä palveluja eikä vastaa niiden saatavuudesta tai 
 - Maksu, laskutus ja palautukset määräytyvät Applen App Store -ehtojen mukaan.
 - Kehittäjä ei käsittele maksukorttitietoja suoraan.
 
-**8.1 Viikoittaiset ilmoitukset (valinnainen, v1.2+)**
+**8.1 Viikoittaiset ilmoitukset (valinnainen)**
 
 Käyttäjä voi kytkeä päälle viikoittaisen yhteenvetoilmoituksen. Ilmoitukset lähetetään paikallisesti laitteelta; niissä ei ole mainoksia eikä kehittäjän palvelinyhteyttä. Oletus: pois päältä. Käyttäjä voi poistaa ilmoitukset laitteen asetuksista tai sovelluksen asetuksista.
 
@@ -208,7 +205,7 @@ Tämä kohta täydentää Plus-tilauksen ehdot. Sovelluksen Kilsat Plus -näkym�
 |-------|--------|
 | **Tuotteen nimi** | Kilsat Plus |
 | **Tyyppi** | Automaattisesti uusiutuva kuukausitilaus |
-| **Laskutusjakso** | 1 kuukausi |
+| **Laskitusjakso** | 1 kuukausi |
 | **Hinta** | Näytetään sovelluksessa ja App Storen maksuikkunassa ennen ostoa. Ohjeellinen hinta Suomessa: **2,99 € / kk**. Todellinen hinta määräytyy käyttäjän App Store -maan, valuutan ja verotuksen mukaan. |
 | **Kokeilujakso** | Uusille tilaajille **1 kuukausi ilmaiseksi**, jos tarjolla käyttäjän App Store -alueella. |
 | **Kokeilun jälkeen** | Kokeilujakson päättymisen jälkeen veloitetaan kuukausittain App Storen näyttämä hinta, ellei tilausta peruuteta ajoissa. |
@@ -225,15 +222,15 @@ Tämä kohta täydentää Plus-tilauksen ehdot. Sovelluksen Kilsat Plus -näkym�
 
 ### 8.2.3 Mitä Plus sisältää ja mitä ei
 
-**Plus sisältää (v1.2):**
+**Plus sisältää:**
 
 - Automaattinen matkan tunnistus ja tallennus (vaatii käyttäjän valinnan ja tarvittaessa *Sijainti aina* -luvan)
 - Live Activity ajon aikana (lukitusnäyttö / Dynamic Island) — vain aktiivisen matkan aikana
 - 4 minuutin pysähdysmuistutus automaattimatkan aikana
-- GPS-primaus (v1.2.1+): merkittävän sijainninmuutoksen herätys + lyhyt GPS-ikkuna; CarPlay, Bluetooth tai liiketunnistus voivat nopeuttaa (ei jatkuvaa GPS:ää kun et aja)
-- CarPlay-pikakäynnistys ja kumulatiivinen liikeaika käynnistyksessä (v1.2.1)
-- Yhteyskatkoksen pikatallennus pysäköinnin yhteydessä, normaalin 5 min turva-ajan säilyessä liikenteessä (v1.2.1)
-- Automaattinen työ-/yksityisajoluokittelu koti-/työpaikkamerkittyjen suosikkiosoitteiden perusteella (v1.2.1)
+- GPS-primaus: merkittävän sijainninmuutoksen herätys + lyhyt GPS-ikkuna; CarPlay, Bluetooth tai liiketunnistus voivat nopeuttaa (ei jatkuvaa GPS:ää kun et aja)
+- CarPlay-pikakäynnistys ja kumulatiivinen liikeaika käynnistyksessä
+- Yhteyskatkoksen pikatallennus pysäköinnin yhteydessä, normaalin 5 min turva-ajan säilyessä liikenteessä
+- Automaattinen työ-/yksityisajoluokittelu koti-/työpaikkamerkittyjen suosikkiosoitteiden perusteella
 
 **Plus ei sisällä eikä vaadi:**
 
@@ -299,6 +296,8 @@ Kehittäjä voi muuttaa, keskeyttää tai lopettaa sovelluksen saatavuuden ilman
 **v1.2.1 (27.7.2026):** Lisätty valinnainen matkamittarin lukema (alku/loppu) manuaaliseen matkaan — käyttäjän oma muistiinpano, ei vaikuta korvauslaskentaan. Lisätty ja vahvistettu selkeä maininta (kohta 2), ettei sovelluksella ole mitään yhteyttä, kumppanuutta tai hyväksyntää Verohallinnolta tai muulta viranomaiselta. Laajennettu käyttäjän vastuuta (kohta 3) ja kehittäjän vastuuvapautta (kohdat 5–6) koskemaan käyttäjän itse syöttämiä tietoja ja niiden hyväksyttävyyttä viranomaisille/kolmansille.
 
 **v1.2.1 (6.8.2026):** Täsmennetty, että sovelluksen sulkeminen sovellusvaihtajasta voi silti sallia lyhyen sijaintiherätyksen iOS:n järjestelmätoiminnon ansiosta, mutta luotettavin automaattinen tunnistus edellyttää, ettei sovellusta suljeta sovellusvaihtajasta.
+
+**v1.2.1 (8.8.2026):** Siistitty esitystapa: versio-etuliitteet poistettu käsittelykuvauksista (kohta 2 ja 8). Sisältö säilyy; versiohistoria pysyy tässä muutoslokissa.
 
 ---
 

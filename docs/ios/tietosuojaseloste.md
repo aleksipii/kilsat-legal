@@ -6,7 +6,7 @@ permalink: /ios/tietosuojaseloste/
 
 # Tietosuojaseloste (Kilsat / Ajopäiväkirja)
 
-**Viimeksi päivitetty:** 6.8.2026  
+**Viimeksi päivitetty:** 8.8.2026  
 **Versio:** 1.2.1  
 **Tukiosoite:** kilsat.tuki@gmail.com
 
@@ -42,13 +42,13 @@ Sovellus voi tallentaa ja näyttää käyttäjän laitteella seuraavia tietoja:
 - käyttäjän suosikkiosoitteet (nimi, osoite, koordinaatit, valinnainen koti- tai työpaikka-merkintä)
 - käyttäjän suosikkiautot (nimi, rekisterinumero)
 - matkaan lukittu kilometrikorvaus ja siitä johdettu korvaussumma
-- matkaan lukittu rekisterinumero (tallennetaan matkaan tallennushetkellä; v1.2.1)
+- matkaan lukittu rekisterinumero (tallennetaan matkaan tallennushetkellä)
 - käyttäjän itse syöttämät raportointitiedot (esim. kuljettajan nimi, oletusrekisterinumero asetuksissa)
 - valinnainen matkamittarin lukema ajon alkaessa ja/tai päättyessä manuaalisessa matkassa (käyttäjän itse syöttämä muistiinpano; **ei vaikuta korvauslaskentaan** eikä sitä tarkisteta tai vahvisteta millään tavalla — ks. kohta 0)
 
 Lisäksi sovellus voi tallentaa laitteelle asetusarvoja (esim. oletuskilometrikorvaus, ulkoasu, onboarding-hyväksyntä, työ-/yksityisajon oletusvalinta Siri-shortcuteja varten). Näitä ei lähetetä kehittäjän palvelimelle.
 
-**v1.1 — widget (lukitusnäyttö / kotinäyttö):** Widget näyttää vain paikallisen ajotilan (onko matka käynnissä, ajettu matka kilometreinä). Nämä tiedot jaetaan pääsovelluksen ja widgetin välillä **vain laitteella**. Kehittäjä ei vastaanota widgetin tietoja.
+**Widget (lukitusnäyttö / kotinäyttö):** Widget näyttää vain paikallisen ajotilan (onko matka käynnissä, ajettu matka kilometreinä). Nämä tiedot jaetaan pääsovelluksen ja widgetin välillä **vain laitteella**. Kehittäjä ei vastaanota widgetin tietoja.
 
 **Ei käytössä:** iCloud-synkronointi, käyttäjätilit tai kehittäjän pilvitietokanta. iCloud ei ole osa nykyistä Kilsat Plus -tilausta.
 
@@ -65,11 +65,11 @@ Lisäksi sovellus voi tallentaa laitteelle asetusarvoja (esim. oletuskilometriko
 
 Tilauksen ehdot (hinta, kokeilu, uusiminen, peruutus): ks. [Käyttöehdot](Kayttoehdot.md) kohta **8.2**.
 
-**v1.2 — liike- ja automatiikka:** Automaattisen matkan tunnistus voi käyttää laitteen **liike- ja kunto -tietoja** (esim. ajoneuvossa liikkuminen) GPS:n tukena. Data käsitellään vain laitteella automatiikan päätöksiin; kehittäjä ei vastaanota liikedataa.
+**Liike- ja automatiikka:** Automaattisen matkan tunnistus voi käyttää laitteen **liike- ja kunto -tietoja** (esim. ajoneuvossa liikkuminen) GPS:n tukena. Data käsitellään vain laitteella automatiikan päätöksiin; kehittäjä ei vastaanota liikedataa.
 
-**v1.2.1 — autoyhteyden tunnistus (akun säästö):** Automaattisen matkan taustavalvonta voi kuunnella laitteen **äänireittiä** (esim. CarPlay tai auton Bluetooth-audio) paikallisesti sen arvioimiseksi, onko käyttäjä autoyhteydessä. Tieto ei poistu laitteelta eikä lähetetä kehittäjälle. Tätä käytetään yhdessä liiketunnistuksen kanssa GPS-primauksen päätöksiin (ks. kohta 3).
+**Autoyhteyden tunnistus (akun säästö):** Automaattisen matkan taustavalvonta voi kuunnella laitteen **äänireittiä** (esim. CarPlay tai auton Bluetooth-audio) paikallisesti sen arvioimiseksi, onko käyttäjä autoyhteydessä. Tieto ei poistu laitteelta eikä lähetetä kehittäjälle. Tätä käytetään yhdessä liiketunnistuksen kanssa GPS-primauksen päätöksiin (ks. kohta 3).
 
-**v1.2.1 — käynnistyksen ja pysäytyksen tarkennukset:** Automaattisen matkan käynnistys- ja lopetuslogiikkaa on tarkennettu liikennetilanteita paremmin huomioivaksi:
+**Käynnistyksen ja pysäytyksen tarkennukset:** Automaattisen matkan käynnistys- ja lopetuslogiikkaa on tarkennettu liikennetilanteita paremmin huomioivaksi:
 
 - **Kumulatiivinen käynnistys:** Lyhyet pysähdykset (esim. punaiset liikennevalot, ruuhka) eivät nollaa kertynyttä liikeaikaa matkan käynnistyksessä.
 - **CarPlay-pikakäynnistys:** Kun laite on yhdistetty CarPlayhyn tai auton äänijärjestelmään, automaattinen matka voi käynnistyä nopeammin (matalampi nopeus- ja aikaraja) kuin ilman yhteyttä.
@@ -77,11 +77,11 @@ Tilauksen ehdot (hinta, kokeilu, uusiminen, peruutus): ks. [Käyttöehdot](Kaytt
 
 Kaikki päättely tapahtuu laitteella GPS-, äänireitti- ja liiketiedon perusteella; mitään näistä tiedoista ei lähetetä kehittäjälle.
 
-**v1.2.1 — lähtöosoitteen ankkuri (paikallinen):** Sovellus voi tallentaa viimeisimmän luotettavan pysähdyspaikan (koordinaatit, tarkkuus, ajankohta — ei osoitetekstiä) laitteen paikalliseen jaettuun säiliöön, jotta automaattisen matkan lähtöosoite voidaan muodostaa tarkemmin myös silloin, kun jatkuvaa GPS-seurantaa ei ole ollut päällä juuri ennen matkan alkua. Ankkuri päivittyy iOS:n harvoin päivittyvän **merkittävät sijainninmuutokset** -toiminnon ja laitteen liiketunnistuksen (paikallaanolo) avulla, ja se vanhenee automaattisesti 24 tunnin kuluttua. Tieto pysyy aina laitteella eikä sitä lähetetä kehittäjälle.
+**Lähtöosoitteen ankkuri (paikallinen):** Sovellus voi tallentaa viimeisimmän luotettavan pysähdyspaikan (koordinaatit, tarkkuus, ajankohta — ei osoitetekstiä) laitteen paikalliseen jaettuun säiliöön, jotta automaattisen matkan lähtöosoite voidaan muodostaa tarkemmin myös silloin, kun jatkuvaa GPS-seurantaa ei ole ollut päällä juuri ennen matkan alkua. Ankkuri päivittyy iOS:n harvoin päivittyvän **merkittävät sijainninmuutokset** -toiminnon ja laitteen liiketunnistuksen (paikallaanolo) avulla, ja se vanhenee automaattisesti 24 tunnin kuluttua. Tieto pysyy aina laitteella eikä sitä lähetetä kehittäjälle.
 
-**v1.2.1 — automaattinen työ-/yksityisajoluokittelu (Kilsat Plus):** Jos käyttäjä on merkinnyt suosikkiosoitteisiin kodin ja/tai yhden tai useamman työpaikan, sovellus voi automaattisen matkan tallennuksen yhteydessä päätellä, onko kyseessä työ- tai yksityisajo, vertaamalla matkan lähtöpistettä näihin merkittyihin osoitteisiin (noin 150 metrin tarkkuudella). Päättely tehdään kokonaan laitteella tallennettujen koordinaattien perusteella; jos osumaa ei löydy, sovellus käyttää käyttäjän asettamaa oletusarvoa (työajo/yksityisajo). Ominaisuus on valinnainen ja toimii vain, jos käyttäjä on itse merkinnyt osoitteet koti- tai työpaikka-tyyppisiksi.
+**Automaattinen työ-/yksityisajoluokittelu (Kilsat Plus):** Jos käyttäjä on merkinnyt suosikkiosoitteisiin kodin ja/tai yhden tai useamman työpaikan, sovellus voi automaattisen matkan tallennuksen yhteydessä päätellä, onko kyseessä työ- tai yksityisajo, vertaamalla matkan lähtöpistettä näihin merkittyihin osoitteisiin (noin 150 metrin tarkkuudella). Päättely tehdään kokonaan laitteella tallennettujen koordinaattien perusteella; jos osumaa ei löydy, sovellus käyttää käyttäjän asettamaa oletusarvoa (työajo/yksityisajo). Ominaisuus on valinnainen ja toimii vain, jos käyttäjä on itse merkinnyt osoitteet koti- tai työpaikka-tyyppisiksi.
 
-**v1.2 — paikalliset ilmoitukset:** Automaattisen matkan aikana (Plus, valinnainen asetus päällä) sovellus voi lähettää **yhden toiminnallisen muistutuksen** pysähdyksen jälkeen (esim. "Jatkatko matkaa?" ennen automaattista tallennusta). Ilmoitus on sidottu aktiiviseen automatkaan; sitä ei käytetä mainontaan. **Viikoittainen yhteenveto** on valinnainen ja oletuksena pois päältä — lasketaan laitteella omista matkoista, ei markkinointia. Ilmoituksia ei lähetetä kehittäjän palvelimelta.
+**Paikalliset ilmoitukset:** Automaattisen matkan aikana (Plus, valinnainen asetus päällä) sovellus voi lähettää **yhden toiminnallisen muistutuksen** pysähdyksen jälkeen (esim. "Jatkatko matkaa?" ennen automaattista tallennusta). Ilmoitus on sidottu aktiiviseen automatkaan; sitä ei käytetä mainontaan. **Viikoittainen yhteenveto** on valinnainen ja oletuksena pois päältä — lasketaan laitteella omista matkoista, ei markkinointia. Ilmoituksia ei lähetetä kehittäjän palvelimelta.
 
 ---
 
@@ -96,7 +96,7 @@ Sovellus käyttää laitteen GPS:ää ajomatkojen mittaamiseen ja karttanäyttö
 
 Taustaseuranta on käytössä vain, kun käyttäjä on myöntänyt *Sijainti aina* -luvan.
 
-### Siri-shortcutit (v1.1)
+### Siri-shortcutit
 
 Käyttäjä voi valinnaisesti käyttää Sirin pikakomentoja (esim. "Aloita matka Kilsat", "Lopeta matka Kilsat"). Komennot käyttävät samaa paikallista matkan seuranta- ja tallennuslogiikkaa kuin sovelluksen napit. Siri ja pikakomennot käsitellään Applen järjestelmän kautta; kehittäjä ei vastaanota ääni- tai puhedataa.
 
@@ -104,17 +104,17 @@ Käyttäjä voi valinnaisesti käyttää Sirin pikakomentoja (esim. "Aloita matk
 
 GPS voi heikentyä tunneleissa, sisätiloissa tai lentotilassa. Sovellus suodattaa heikkotarkkuuksisia pisteitä. Ilman kelvollista GPS:ää matkan tallennus voidaan estää.
 
-### Automaattinen matka ja taustasijainti (v1.2, Kilsat Plus)
+### Automaattinen matka ja taustasijainti (Kilsat Plus)
 
 Automaattinen matka on **valinnainen Plus-ominaisuus**. Se voi vaatia *Sijainti aina* -luvan, jotta seuranta voi jatkua näytön ollessa lukittuna. Lupa pyydetään vain, kun käyttäjä kytkee automaattisen matkan päälle. Ilmainen manuaalinen matka toimii edelleen *Sijainti käytön aikana* -luvalla.
 
-**GPS-primaus ja akun säästö (v1.2.1+):** Kun automaattinen matka on käytössä mutta aktiivista matkaa ei ole käynnissä, sovellus **ei pidä jatkuvaa GPS-seurantaa päällä kotona tai toimistolla**. Kun et aja, käytetään harvaa *merkittävät sijainninmuutokset* -valvontaa, joka voi herättää sovelluksen taustalla merkittävän sijaintimuutoksen yhteydessä. Lyhyt jatkuva GPS-ikkuna käynnistyy, kun yksi seuraavista täyttyy: **merkittävä sijaintimuutos (herätys)**, **laitteen liiketunnistus tunnistaa ajoneuvossa liikkumisen**, tai **CarPlay-/Bluetooth-äänireitti**. Jos ajoa ei vahvisteta, GPS-ikkuna suljetaan (tyypillisesti noin 1,5–3 minuutin kuluttua). CarPlay ei ole pakollinen. Sininen sijainti-indikaattori näkyy vain, kun taustasijaintia käytetään aktiivisesti.
+**GPS-primaus ja akun säästö:** Kun automaattinen matka on käytössä mutta aktiivista matkaa ei ole käynnissä, sovellus **ei pidä jatkuvaa GPS-seurantaa päällä kotona tai toimistolla**. Kun et aja, käytetään harvaa *merkittävät sijainninmuutokset* -valvontaa, joka voi herättää sovelluksen taustalla merkittävän sijaintimuutoksen yhteydessä. Lyhyt jatkuva GPS-ikkuna käynnistyy, kun yksi seuraavista täyttyy: **merkittävä sijaintimuutos (herätys)**, **laitteen liiketunnistus tunnistaa ajoneuvossa liikkumisen**, tai **CarPlay-/Bluetooth-äänireitti**. Jos ajoa ei vahvisteta, GPS-ikkuna suljetaan (tyypillisesti noin 1,5–3 minuutin kuluttua). CarPlay ei ole pakollinen. Sininen sijainti-indikaattori näkyy vain, kun taustasijaintia käytetään aktiivisesti.
 
-**Sovelluksen sulkeminen sovellusvaihtajasta (6.8.2026):** *Merkittävät sijainninmuutokset* -valvonta on iOS:n järjestelmätason toiminto, joka voi herättää sovelluksen lyhyeksi hetkeksi taustalla **myös silloin, kun käyttäjä on sulkenut Kilsatin kokonaan sovellusvaihtajasta**. Tällöin GPS-ikkuna voi käynnistyä samalla tavalla kuin sovelluksen ollessa tavallisesti taustalla. Sen sijaan laitteen liiketunnistus ja CarPlay-/Bluetooth-äänireitin tunnistus eivät ole aktiivisia ennen kuin käyttäjä avaa sovelluksen seuraavan kerran manuaalisesti. Kaikki päättely tapahtuu tälläkin polulla laitteella; mitään tietoa ei lähetetä kehittäjälle.
+**Sovelluksen sulkeminen sovellusvaihtajasta:** *Merkittävät sijainninmuutokset* -valvonta on iOS:n järjestelmätason toiminto, joka voi herättää sovelluksen lyhyeksi hetkeksi taustalla **myös silloin, kun käyttäjä on sulkenut Kilsatin kokonaan sovellusvaihtajasta**. Tällöin GPS-ikkuna voi käynnistyä samalla tavalla kuin sovelluksen ollessa tavallisesti taustalla. Sen sijaan laitteen liiketunnistus ja CarPlay-/Bluetooth-äänireitin tunnistus eivät ole aktiivisia ennen kuin käyttäjä avaa sovelluksen seuraavan kerran manuaalisesti. Kaikki päättely tapahtuu tälläkin polulla laitteella; mitään tietoa ei lähetetä kehittäjälle.
 
 Automaattinen tunnistus perustuu GPS-nopeuteen, liikeanalyysiin ja sovelluksen sääntöihin. Se ei takaa virheetöntä tunnistusta kaikissa tilanteissa (esim. julkiset kulkuneuvot, kävely tai juoksu — näissä nopeus jää yleensä automaattisen matkan käynnistysrajan alle).
 
-### Live Activity (v1.2, Kilsat Plus)
+### Live Activity (Kilsat Plus)
 
 Kun Plus-käyttäjällä on aktiivinen matka (manuaalinen tai automaattinen), sovellus voi näyttää **Live Activity** -näytön lukitusnäytöllä ja Dynamic Islandilla. Näytetään vain matkaan liittyvät tiedot (esim. kilometrit, kesto). Tiedot jaetaan pääsovelluksen ja Live Activity -näytön välillä **vain laitteella**. Kehittäjä ei vastaanota Live Activity -dataa.
 
@@ -171,12 +171,12 @@ Tietoja käytetään ainoastaan käyttäjän omassa ajopäiväkirjassa:
 - ajomatkojen kirjaamiseen ja muokkaamiseen
 - kilometrikorvausten laskentaan
 - CSV- ja PDF-vientiin käyttäjän omaa kirjanpitoa varten
-- kuukausittaisiin tilastoihin (työ-/yksityisajot, ajoneuvokohtaiset yhteenvedot; v1.2.1)
-- matkan rekisterinumeron tallentamiseen ja raportointiin (v1.2.1)
+- kuukausittaisiin tilastoihin (työ-/yksityisajot, ajoneuvokohtaiset yhteenvedot)
+- matkan rekisterinumeron tallentamiseen ja raportointiin
 - valinnaisen matkamittarilukeman tallentamiseen käyttäjän omaksi muistiinpanoksi kirjanpitoa/verotusta varten (käyttäjän vastuulla, ei vaikuta korvauslaskentaan)
 - ajomatkan pituuden ehdotukseen manuaalisissa matkoissa osoitteiden perusteella (reittiehdotus; käyttäjä voi aina korjata km:n käsin)
-- ajotilan näyttämiseen widgetissä (v1.1), kun käyttäjä on lisännyt widgetin
-- automaattisen matkan työ-/yksityisajon päättelyyn käyttäjän merkitsemien koti-/työpaikkaosoitteiden perusteella (Kilsat Plus, v1.2.1)
+- ajotilan näyttämiseen widgetissä, kun käyttäjä on lisännyt widgetin
+- automaattisen matkan työ-/yksityisajon päättelyyn käyttäjän merkitsemien koti-/työpaikkaosoitteiden perusteella (Kilsat Plus)
 
 ---
 
@@ -254,6 +254,8 @@ Tätä selostetta voidaan päivittää (esim. uudet ominaisuudet). Ajantasainen 
 **v1.2.1 (27.7.2026):** Lisätty valinnainen matkamittarin lukema (alku/loppu) manuaaliseen matkaan — käyttäjän oma muistiinpano, ei vaikuta korvauslaskentaan. Lisätty kohta 0: sovellus ei liity Verohallintoon tai muuhun viranomaiseen millään tavalla. Täsmennetty kehittäjän vastuuvapautta (kohta 9.1) käyttäjän itse syöttämien tietojen osalta.
 
 **v1.2.1 (6.8.2026):** Täsmennetty kohtaa 3: merkittävät sijainninmuutokset -valvonta voi herättää sovelluksen lyhyeksi hetkeksi taustalla myös silloin, kun käyttäjä on sulkenut sovelluksen kokonaan sovellusvaihtajasta (iOS:n järjestelmätason toiminto). Muu tunnistus (liiketunnistus, CarPlay/Bluetooth) vaatii sovelluksen avaamisen manuaalisesti tämän jälkeen.
+
+**v1.2.1 (8.8.2026):** Siistitty esitystapa: versio-etuliitteet poistettu käsittelykuvauksista (kohdat 2–6). Sisältö säilyy; versiohistoria pysyy tässä muutoslokissa.
 
 ---
 
