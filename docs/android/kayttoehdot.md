@@ -1,12 +1,6 @@
----
-layout: page
-title: Käyttöehdot ja vastuunvapaus (Android)
-permalink: /android/kayttoehdot/
----
-
 # Käyttöehdot ja vastuunvapaus (Kilsat / Ajopäiväkirja — Android)
 
-**Viimeksi päivitetty:** 30.7.2026  
+**Viimeksi päivitetty:** 8.8.2026  
 **Versio:** Android v1.2.1 (Plus + automatiikka + widget)  
 **Tukiosoite:** kilsat.tuki@gmail.com
 
@@ -38,6 +32,7 @@ Sovellus on työkalu ajomatkojen kirjaamiseen, tarkasteluun ja raportointiin kä
 - Matkaan lukittu rekisterinumero tallennushetkellä
 - CSV- ja PDF-vienti raportointiin
 - Kotinäytön widget (km / korvaus, paikallinen data)
+- Valinnainen viikoittainen yhteenvetoilmoitus (oletuksena pois; lasketaan laitteella)
 - Onboarding ja asetusten tallennus laitteelle
 - Vapaaehtoinen *Tarjoa kahvi* -kertaosto (ei avaa Plus-ominaisuuksia; **ei lahjoitus eikä hyväntekeväisyys** — ks. kohta 8)
 
@@ -72,6 +67,8 @@ Sovelluksen oletuskilometrikorvaus (esim. 0,55 €/km) on vain aloitusarvo. Käy
 **Matkamittarin lukema (valinnainen):** Käyttäjä voi manuaalisessa matkassa halutessaan kirjata matkamittarin lukeman. Kenttä on täysin valinnainen muistiinpano — **se ei vaikuta korvauslaskentaan**, jonka lähteenä on GPS-mitattu tai käsin syötetty ajomatka (km).
 
 Automaattinen matka on apuväline. Käyttäjä vastaa tallennettujen matkojen oikeellisuudesta ja voi perua tai muokata matkoja historiasta. 4 minuutin pysähdyksen jälkeen sovellus kysyy, jatkatko matkaa; jos et vastaa, matka tallentuu automaattisesti 5 minuutin pysähdyksen jälkeen.
+
+Ilman autoyhteyttä tunnistus voi käynnistyä selkeän ajon perusteella (GPS). Julkisessa liikenteessä (bussi, juna, raitiovaunu, taksi) tunnistus voi joskus käynnistyä väärin — käyttäjä voi perua matkan ja valita matkustaja- tai vahinkoperuutuksen; tunnistus jää tauolle (ks. tietosuojaseloste kohta 2).
 
 ---
 
@@ -168,7 +165,6 @@ Tämä kohta täydentää Plus-tilauksen ehdot. Sovelluksen Kilsat Plus -näkym�
 | Kohta | Tiedot |
 |-------|--------|
 | **Tuotteen nimi** | Kilsat Plus |
-| **Tuote-ID** | `com.piirainen.ajopaivakirja.plus.monthly` |
 | **Tyyppi** | Automaattisesti uusiutuva kuukausitilaus |
 | **Laskutusjakso** | 1 kuukausi |
 | **Hinta** | Näytetään sovelluksessa ja Google Playn maksuikkunassa ennen ostoa. Ohjeellinen hinta Suomessa: **2,99 € / kk**. Todellinen hinta määräytyy käyttäjän Play-maan, valuutan ja verotuksen mukaan. |
@@ -194,6 +190,9 @@ Tämä kohta täydentää Plus-tilauksen ehdot. Sovelluksen Kilsat Plus -näkym�
 - GPS-primaus akun säästämiseksi (ei jatkuvaa GPS:ää kun et aja)
 - Autoyhteyden / Android Auto -tilan paikallinen tunnistus täydentävänä signaalina
 - Automaattinen työ-/yksityisajoluokittelu koti-/työpaikkamerkittyjen suosikkiosoitteiden perusteella
+- Käyttäjän peruutus + matkustajakysymys väärän käynnistyksen jälkeen (julkinen liikenne)
+
+**Tausta ja Force stop:** Automaattinen tunnistus toimii luotettavimmin, kun Kilsat saa olla taustalla ja akkuoptimointi on poistettu käytöstä. Jos pysäytät sovelluksen kokonaan (**Force stop** tai aggressiivinen sulkeminen viimeisistä sovelluksista), tunnistus ei yleensä herää ennen kuin avaat Kilsatin uudelleen. Tämä poikkeaa iOS:n App Switcher -käyttäytymisestä.
 
 **Plus ei sisällä eikä vaadi:**
 
@@ -235,6 +234,8 @@ Kehittäjä voi päivittää näitä ehtoja. Ajantasainen versio on saatavilla S
 **Android v1.0 (27.7.2026):** Ensimmäinen Android-julkaisu. Manuaalinen GPS-matka, historia, tilastot, suosikit, CSV/PDF-vienti.
 
 **Android v1.2.1 (30.7.2026):** Kilsat Plus -tilaus (Google Play), automaattinen matka, ajon aikainen ilmoitus, widget, suosikkiautot, tilausehdot kohta 8.2. Vahvistettu, että *Tarjoa kahvi* ei ole lahjoitus eikä hyväntekeväisyys. Ilmainen perustaso säilyy.
+
+**Android v1.2.1 (8.8.2026):** Täsmennetty automatiikan käynnistystä ilman autoyhteyttä, peruutusta julkisessa liikenteessä ja Force stop -käyttäytymistä. Viikoittainen yhteenveto ilmaistasolla.
 
 ---
 
