@@ -47,7 +47,7 @@ Sovellus voi tallentaa ja näyttää käyttäjän laitteella seuraavia tietoja:
 
 Lisäksi sovellus tallentaa laitteelle asetusarvoja (esim. oletuskilometrikorvaus, onboarding-hyväksyntä, Plus-/auto-trip-asetukset). Näitä ei lähetetä kehittäjän palvelimelle.
 
-**Ei käytössä:** pilvisynkronointi, käyttäjätilit tai kehittäjän pilvitietokanta. Matkatiedot eivät synkronoidu Google Drive -varmuuskopioon (`allowBackup="false"`).
+**Ei käytössä:** pilvisynkronointi, käyttäjätilit tai kehittäjän pilvitietokanta. Matkatiedot eivät synkronoidu Google Drive -varmuuskopioon.
 
 **Widget:** Kotinäytön Glance-widget näyttää paikallisen ajotilan (km / korvaus). Tiedot jaetaan pääsovelluksen ja widgetin välillä **vain laitteella**.
 
