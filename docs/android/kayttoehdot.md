@@ -1,3 +1,9 @@
+---
+layout: page
+title: Käyttöehdot ja vastuunvapaus (Android)
+permalink: /android/kayttoehdot/
+---
+
 # Käyttöehdot ja vastuunvapaus (Kilsat / Ajopäiväkirja — Android)
 
 **Viimeksi päivitetty:** 8.8.2026  

@@ -1,3 +1,9 @@
+---
+layout: page
+title: Tietosuojaseloste (Android)
+permalink: /android/tietosuojaseloste/
+---
+
 # Tietosuojaseloste (Kilsat / Ajopäiväkirja — Android)
 
 **Viimeksi päivitetty:** 8.8.2026  
